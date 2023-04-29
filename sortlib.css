@@ -1,0 +1,476 @@
+ @import url('https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Karla', sans-serif;
+}
+
+
+
+header
+{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.08);
+}
+
+
+
+header .box 
+{
+    width: 18.5px;
+    height: 18.5px;
+    background: #fff;
+    box-shadow: 0px 0px 3px 3px rgba(25,34,76,0.3);
+    border-radius: 50%;
+    margin-left: 15px;
+    transition: 1.8s;
+}
+
+
+header .box:hover
+{
+    background:  rgba(25,34,76,1);
+    transition: 1.8s;
+}
+
+
+
+header #hid 
+{
+    font-size: 1.16em;
+    color: #15215c;
+    margin-left: 11px;
+}
+
+
+header #hid spanA
+{
+    color: #ec8b00;
+}
+
+
+
+header #one 
+{
+    margin-left: 240px;
+    padding: 3px;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0.3);
+    cursor: none;
+}
+
+
+header #one:hover
+{
+    border: 0px;
+    box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.08);
+}
+
+
+header #one #pic 
+{
+    width: 23px;
+}
+
+
+
+
+@media only screen and (max-width: 930px) {
+
+
+
+.home
+{
+    
+    width: 100%;
+    height: 1000vh;
+    background: #fff;
+    padding: 25px 18px;
+}
+
+
+
+
+.home .container {
+  width: 320;
+  margin: 50px auto 0;
+  text-align: center;
+}
+
+/*Styling Selectbox*/
+.dropdown {
+  width: 300px;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 0 2px rgb(204, 204, 204);
+  transition: all .5s ease;
+  position: relative;
+  font-size: 14px;
+  color: #474747;
+  height: auto;
+  text-align: left;
+}
+.dropdown .select {
+    cursor: pointer;
+    display: block;
+    padding: 10px
+}
+.dropdown .select > i {
+    font-size: 13px;
+    color: #888;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    float: right;
+    line-height: 20px;
+}
+.dropdown:hover {
+    box-shadow: 0 0 4px rgb(204, 204, 204);
+}
+.dropdown:active {
+    background-color: #f8f8f8;
+}
+.dropdown.active:hover,
+.dropdown.active {
+    box-shadow: 0 0 4px rgb(204, 204, 204);
+    border-radius: 2px 2px 0 0;
+    background-color: #f8f8f8;
+}
+.dropdown.active .select > i {
+    transform: rotate(-90deg);
+}
+.dropdown .dropdown-menu {
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    left: 0;
+    margin-top: 1px;
+    box-shadow: 0 1px 2px rgb(204, 204, 204);
+    border-radius: 0 1px 2px 2px;
+    overflow: hidden;
+    display: none;
+    max-height: 144px;
+    overflow-y: auto;
+    z-index: 777;
+}
+.dropdown .dropdown-menu a li {
+    padding: 10px;
+    transition: all .2s ease-in-out;
+    cursor: none;
+    text-decoration: none;
+    color: #555;
+} 
+.dropdown .dropdown-menu {
+    padding: 0;
+    list-style: none;
+}
+.dropdown .dropdown-menu li:hover {
+    background-color: #f2f2f2;
+}
+.dropdown .dropdown-menu li:active {
+    background-color: #e2e2e2;
+}
+
+
+
+
+.home a .bg
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.home a .bg::before
+{
+    position: absolute;
+    width: 100%;
+    height: 260px;
+    top: 0;
+    left: 0;
+    content: '';
+    background: rgba(150,75,0,0.5);
+    backdrop-filter: blur(1px);
+    z-index: 1;
+    margin-top: 8.08rem;
+    cursor: pointer;
+}
+
+
+
+
+.home a .bg img 
+{
+    position: absolute;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+
+
+
+
+.home a .bgw
+{
+    display: block;
+    z-index: 10;
+    margin-top: 1.8rem;
+    cursor: pointer;
+}
+
+
+
+.home a .bgw h1
+{
+    position: absolute;
+    font-size: 2em;
+    color: #fff;
+    z-index: 10;
+}
+
+
+
+.home a .bgw h3
+{
+    position: absolute;
+    font-size: 1.4em;
+    color: #fff;
+    z-index: 10;
+    margin-top: 3rem;
+}
+
+
+
+.home a .bgw p
+{
+    position: absolute;
+    font-size: 1em;
+    color: rgba(255,255,255,0.7);
+    z-index: 10;
+    margin-top: 7rem;
+}
+
+
+
+.home a .bgw h4
+{
+    position: absolute;
+    font-size: 1em;
+    color: orange;
+    z-index: 10;
+    font-family: 'IBM Plex Mono', monospace;
+    margin-top: 9.5rem;
+}
+
+
+
+
+.home a .bgw h5
+{
+    position: absolute;
+    font-size: 1em;
+    color: rgba(255,255,255,0.5);
+    z-index: 10;
+    font-family: 'IBM Plex Mono', monospace;
+    margin-left: 260px;
+    margin-top: 13.2rem;
+}
+
+
+
+
+.home a .bgw h5 spanA
+{
+    color: #fff;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+
+
+.home a .bgw h5 spanB
+{
+    color: green;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+
+
+
+
+.home .projects
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 22rem;
+}
+
+
+
+.home .projects .box1
+{
+    position: absolute;
+    width: 100%;
+    height: 690px;
+    background: #fdfdfd;
+    border-radius: 15px;
+    box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.1);
+}
+
+
+
+.home .projects .box1 #top1
+{
+    position: absolute;
+    font-size: 1.2em;
+    color: #555;
+    padding: 13px;
+}
+
+
+
+.home .projects .box1 .imge1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+
+
+.home .projects .box1 .imge1 img
+{
+    width: 100%;
+}
+
+
+
+.home .projects .box1 #down1
+{
+    position: absolute;
+    font-size: 1em;
+    color: #999;
+    padding: 13px;
+    bottom: 3.5px;
+}
+
+
+
+.home .projects .box1 #imp1
+{
+    position: absolute;
+    padding: 4px 15px;
+    background: #72b215;
+    color: #fff;
+    font-size: 1em;
+    border-radius: 3px;
+    bottom: 12px;
+    right: 12px;
+}
+
+
+
+.home .projects .box1 #imp1:hover
+{
+    background: #4b770b;
+    color: #fdfdfd;
+    transition: 0.2s;
+}
+
+
+
+
+
+
+.home .projects .box2
+{
+    position: absolute;
+    width: 100%;
+    height: 763px;
+    background: #fdfdfd;
+    border-radius: 15px;
+    box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.1);
+    margin-top: 47rem;
+}
+
+
+
+.home .projects .box2 #top2
+{
+    position: absolute;
+    font-size: 1.2em;
+    color: #555;
+    padding: 13px;
+}
+
+
+
+.home .projects .box2 .imge2
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+
+
+.home .projects .box2 .imge2 img
+{
+    width: 100%;
+}
+
+
+
+.home .projects .box2 #down2
+{
+    position: absolute;
+    font-size: 1em;
+    color: #999;
+    padding: 13px;
+    bottom: 3.5px;
+}
+
+
+
+.home .projects .box2 #imp2
+{
+    position: absolute;
+    padding: 4px 15px;
+    background: #72b215;
+    color: #fff;
+    font-size: 1em;
+    border-radius: 3px;
+    bottom: 12px;
+    right: 12px;
+}
+
+
+
+.home .projects .box2 #imp2:hover
+{
+    background: #4b770b;
+    color: #fdfdfd;
+    transition: 0.2s;
+}
+
+
+
+
+
+}
